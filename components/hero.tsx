@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Hero() {
   return (
@@ -11,6 +12,7 @@ export default function Hero() {
             src="/title.png" 
             alt="DataProof Title" 
             fill
+            className="animate-fade-in"
             style={{ 
               objectFit: 'contain',
               objectPosition: 'center',
@@ -49,7 +51,7 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <div className="rounded-lg bg-white px-6 py-3 text-sm font-medium text-black hover:bg-white cursor-pointer group">
+              <Link href="https://t.me/DataProof_Official" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-white px-6 py-3 text-sm font-medium text-black hover:bg-white cursor-pointer group">
                 <div className="relative overflow-hidden">
                   <div className="flex items-center gap-2 transition-transform duration-300 transform group-hover:translate-y-full">
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5">
@@ -72,9 +74,9 @@ export default function Hero() {
                     <span>Telegram</span>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="rounded-lg bg-[#1a1e2e] px-6 py-3 text-sm font-medium text-white hover:bg-[#1a1e2e] cursor-pointer group">
+              <Link href="https://x.com/DataProof_COIN" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-[#1a1e2e] px-6 py-3 text-sm font-medium text-white hover:bg-[#1a1e2e] cursor-pointer group">
                 <div className="relative overflow-hidden">
                   <div className="flex items-center gap-2 transition-transform duration-300 transform group-hover:translate-y-full">
                     <svg viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5">
@@ -95,13 +97,13 @@ export default function Hero() {
                     <span>Twitter X</span>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
 
           {/* Right side image container */}
           <div className="md:w-[35%] relative">
-            <div className="w-[450px] h-[450px] absolute right-[-20%] bottom-[-35%]">
+            <div className="w-[450px] h-[450px] absolute right-[-20%] bottom-[-35%] animate-floating">
               <Image 
                 src="/image-info.png" 
                 alt="DataProof Info" 
