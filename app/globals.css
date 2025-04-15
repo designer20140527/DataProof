@@ -20,6 +20,75 @@
   .animate-floating {
     animation: floating 4s ease-in-out infinite;
   }
+  
+  /* 响应式标题图片 */
+  .title-image {
+    transform: scale(1.25);
+  }
+  
+  @media (max-width: 1024px) {
+    .title-image {
+      transform: scale(0.9);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .title-image {
+      transform: scale(0.8);
+    }
+    
+    /* 手机版导航样式 */
+    .header-logo, 
+    .header-gitbook {
+      display: none !important;
+    }
+    
+    header nav.h-11 ul li a {
+      font-size: 13px !important;
+    }
+    
+    /* 手机版导航水平居中 */
+    header .flex.items-center.w-full {
+      justify-content: center !important;
+    }
+    
+    /* 手机版hero区域样式 */
+    .relative.h-\[450px\].w-full.rounded-lg {
+      height: 300px !important;
+    }
+    
+    /* 隐藏image-info.png */
+    .md\:w-\[35\%\].relative {
+      display: none !important;
+    }
+    
+    /* 修复Safeguard图片在手机版的显示 */
+    .md\:w-\[50\%\] {
+      width: 100% !important;
+    }
+    
+    .safeguard-image-container {
+      height: 300px !important;
+      margin-bottom: 2rem !important;
+      width: 100% !important;
+    }
+    
+    .safeguard-image-wrapper {
+      min-height: 300px !important;
+      position: relative !important;
+      width: 100% !important;
+    }
+    
+    /* 减小手机版section标题字体大小 */
+    section h2.text-5xl {
+      font-size: 2rem !important; /* 从text-5xl (3rem) 减小到 2rem */
+      line-height: 1.2 !important;
+    }
+    
+    section h3.text-xl {
+      font-size: 1.1rem !important;
+    }
+  }
 }
 
 @keyframes fadeIn {

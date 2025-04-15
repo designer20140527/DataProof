@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
@@ -12,11 +14,10 @@ export default function Hero() {
             src="/title.png" 
             alt="DataProof Title" 
             fill
-            className="animate-fade-in"
+            className="animate-fade-in title-image"
             style={{ 
               objectFit: 'contain',
-              objectPosition: 'center',
-              transform: 'scale(1.25)'
+              objectPosition: 'center'
             }}
             priority
           />

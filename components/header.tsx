@@ -60,7 +60,7 @@ export default function Header() {
             flex items-center w-full transition-all duration-700 ease-in-out
             ${scrolled ? 'justify-center gap-3' : 'justify-between'}
           `}>
-            <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-[#1a1e2e] transition-all duration-700 ease-in-out">
+            <div className="header-logo flex h-11 w-11 items-center justify-center rounded-lg bg-[#1a1e2e] transition-all duration-700 ease-in-out">
               <Link href="/">
                 <Image src="/logo.png" alt="DataProof Logo" width={30} height={30} className="h-8 w-8" />
               </Link>
@@ -121,7 +121,7 @@ export default function Header() {
               </ul>
             </nav>
 
-            <div className="h-11 rounded-lg bg-[#1a1e2e] px-4 flex items-center transition-all duration-700 ease-in-out">
+            <div className="header-gitbook h-11 rounded-lg bg-[#1a1e2e] px-4 flex items-center transition-all duration-700 ease-in-out">
               <div className="relative overflow-hidden group cursor-pointer">
                 <div className="flex items-center transition-transform duration-300 transform group-hover:translate-y-full">
                   <span className="text-[15px] text-white">GitBook</span>

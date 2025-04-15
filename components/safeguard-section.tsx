@@ -16,8 +16,8 @@ export default function SafeguardSection() {
         <div className="flex flex-col items-center gap-12 md:flex-row">
           {/* Left side image container */}
           <div className="md:w-[50%]">
-            <div className="overflow-hidden rounded-lg h-[500px]">
-              <div className="w-full h-full relative">
+            <div className="overflow-hidden rounded-lg h-[500px] safeguard-image-container">
+              <div className="w-full h-full relative safeguard-image-wrapper">
                 <Image 
                   src="/image-safe.png" 
                   alt="DataProof Safeguard" 
