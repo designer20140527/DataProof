@@ -24,16 +24,18 @@ export default function Hero() {
         </div>
 
         <div className="mt-[-20px] relative z-10">
-          <div className="rounded-lg bg-white px-6 py-3 text-sm font-medium text-black shadow-[2px_4px_0px_#1a1e2e] hover:bg-white cursor-pointer group">
-            <div className="relative overflow-hidden">
-              <div className="flex items-center transition-transform duration-300 transform group-hover:translate-y-full">
-                <span>LEARN MORE ON DATAPROOF GITBOOK</span>
-              </div>
-              <div className="absolute top-0 left-0 flex items-center transition-transform duration-300 transform -translate-y-full group-hover:translate-y-0">
-                <span>LEARN MORE ON DATAPROOF GITBOOK</span>
+          <Link href="https://dataproof.gitbook.io/docs" target="_blank" rel="noopener noreferrer">
+            <div className="rounded-lg bg-white px-6 py-3 text-sm font-medium text-black shadow-[2px_4px_0px_#1a1e2e] hover:bg-white cursor-pointer group">
+              <div className="relative overflow-hidden">
+                <div className="flex items-center transition-transform duration-300 transform group-hover:translate-y-full">
+                  <span>LEARN MORE ON DATAPROOF GITBOOK</span>
+                </div>
+                <div className="absolute top-0 left-0 flex items-center transition-transform duration-300 transform -translate-y-full group-hover:translate-y-0">
+                  <span>LEARN MORE ON DATAPROOF GITBOOK</span>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </section>
 

@@ -122,16 +122,18 @@ export default function Header() {
             </nav>
 
             <div className="header-gitbook h-11 rounded-lg bg-[#1a1e2e] px-4 flex items-center transition-all duration-700 ease-in-out">
-              <div className="relative overflow-hidden group cursor-pointer">
-                <div className="flex items-center transition-transform duration-300 transform group-hover:translate-y-full">
-                  <span className="text-[15px] text-white">GitBook</span>
-                  <ChevronRight className="ml-1 h-5 w-5 text-white" />
+              <Link href="https://dataproof.gitbook.io/docs" target="_blank" rel="noopener noreferrer">
+                <div className="relative overflow-hidden group cursor-pointer">
+                  <div className="flex items-center transition-transform duration-300 transform group-hover:translate-y-full">
+                    <span className="text-[15px] text-white">GitBook</span>
+                    <ChevronRight className="ml-1 h-5 w-5 text-white" />
+                  </div>
+                  <div className="absolute top-0 left-0 flex items-center transition-transform duration-300 transform -translate-y-full group-hover:translate-y-0">
+                    <span className="text-[15px] text-white">GitBook</span>
+                    <ChevronRight className="ml-1 h-5 w-5 text-white" />
+                  </div>
                 </div>
-                <div className="absolute top-0 left-0 flex items-center transition-transform duration-300 transform -translate-y-full group-hover:translate-y-0">
-                  <span className="text-[15px] text-white">GitBook</span>
-                  <ChevronRight className="ml-1 h-5 w-5 text-white" />
-                </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
